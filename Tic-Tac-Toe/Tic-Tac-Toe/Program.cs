@@ -7,7 +7,7 @@ namespace Tic_Tac_Toe
         [STAThread]
         static void Main()
         {
-            using (var game = new Game1())
+            using (var game = new Tic_Tac_Toe())
                 game.Run();
         }
     }

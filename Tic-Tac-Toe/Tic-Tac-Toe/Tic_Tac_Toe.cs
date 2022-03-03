@@ -4,12 +4,12 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Tic_Tac_Toe
 {
-    public class Game1 : Game
+    public class Tic_Tac_Toe : Game
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        public Game1()
+        public Tic_Tac_Toe()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
