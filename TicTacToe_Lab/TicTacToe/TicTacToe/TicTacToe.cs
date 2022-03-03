@@ -78,6 +78,16 @@ namespace TicTacToe
                     {
                         // Nothing
                     }
+                    else if(_gameTable[i, j] == 1)
+                    {
+                        // Circle
+                        _spriteBatch.Draw(_circle, new Vector2(j * 200, i * 200), null, Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
+                    }
+                    else if(_gameTable[i, j] == -1)
+                    {
+                        // Cross 
+                        _spriteBatch.Draw(_cross, new Vector2(j * 200, i * 200), null, Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
+                    }
                 }
             }
 
