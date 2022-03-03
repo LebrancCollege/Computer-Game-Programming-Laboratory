@@ -42,7 +42,7 @@ namespace Tic_Tac_Toe
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.AliceBlue);
 
             // TODO: Add your drawing code here
 
