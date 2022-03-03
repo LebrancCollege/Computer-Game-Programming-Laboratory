@@ -67,6 +67,19 @@ namespace TicTacToe
             _spriteBatch.Begin();
 
             //TODO: Draw circle and Cross
+            // 0 -> Not draw.
+            // 1 -> Circle is drawn.
+            // -1 -> Cross is drawn.
+            for(int i = 0; i < 3; i++)
+            {
+                for(int j = 0; j < 3; j++)
+                {
+                    if(_gameTable[i, j] == 0)
+                    {
+                        // Nothing
+                    }
+                }
+            }
 
 
             //Draw Lines for game board

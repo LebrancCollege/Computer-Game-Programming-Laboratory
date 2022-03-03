@@ -4,9 +4,9 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 1/TicTacToe_Lab/TicTacToe/TicTacToe/Content/Circle.jpg</File>
-    <File>D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 1/TicTacToe_Lab/TicTacToe/TicTacToe/Content/Cross.jpg</File>
-    <File>D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 1/TicTacToe_Lab/TicTacToe/TicTacToe/Content/Line.jpg</File>
+    <File>/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/TicTacToe_Lab/TicTacToe/TicTacToe/Content/Circle.jpg</File>
+    <File>/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/TicTacToe_Lab/TicTacToe/TicTacToe/Content/Cross.jpg</File>
+    <File>/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/TicTacToe_Lab/TicTacToe/TicTacToe/Content/Line.jpg</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
