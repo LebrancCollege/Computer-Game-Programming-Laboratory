@@ -12,6 +12,8 @@ namespace TicTacToe
 
         int[,] _gameTable;
 
+        bool _isCircleTurn = true;
+
         public TicTacToe()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -56,7 +58,18 @@ namespace TicTacToe
 
                 if (xPos >= 0 && xPos < 3 && yPos >= 0 && yPos < 3)
                 {
-                    _gameTable[yPos, xPos] = 1;
+                    if(_gameTable[yPos, xPos] == 0)
+                    {
+                        if(_isCircleTurn)
+                        {
+                            _gameTable[yPos, xPos] = 1;
+                        }
+                        else
+                        {
+                            _gameTable[yPos, xPos] = -1;
+                        }
+                    }
+                    _isCircleTurn = !_isCircleTurn;
                 }
             }
 
