@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 
 namespace TicTacToe
 {
@@ -13,6 +14,8 @@ namespace TicTacToe
         int[,] _gameTable;
 
         bool _isCircleTurn = true;
+        bool _isOWinning = false;
+        bool _isXWinning = false;
 
         public TicTacToe()
         {
@@ -37,7 +40,7 @@ namespace TicTacToe
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // Load a Texture2D from a file
+            // Load a Texture2D from a file 
             _line = this.Content.Load<Texture2D>("Line");
             _circle = this.Content.Load<Texture2D>("Circle");
             _cross = this.Content.Load<Texture2D>("Cross");
@@ -58,7 +61,7 @@ namespace TicTacToe
 
                 if (xPos >= 0 && xPos < 3 && yPos >= 0 && yPos < 3)
                 {
-                    if(_gameTable[yPos, xPos] == 0)
+                    if(_gameTable[yPos, xPos] == 0 && _isOWinning == false && _isXWinning == false)
                     {
                         if(_isCircleTurn)
                         {
@@ -82,7 +85,84 @@ namespace TicTacToe
             // (0,1) - (1,1) - (2,1)
             // (0,2) - (1,2) - (2,2)
             // (0,0) - (1,1) - (2,2)
-            // (0,2) - (1,1) - (2,0) 
+            // (0,2) - (1,1) - (2,0)
+
+            // O Winning Condition. 
+            if(_gameTable[0,0] == 1 && _gameTable[0,1] == 1 && _gameTable[0,2] == 1)
+            {
+                _isOWinning = true;
+            }
+            else if(_gameTable[1,0] == 1 && _gameTable[1,1] == 1 && _gameTable[1,2] == 1)
+            {
+                _isOWinning = true;
+            }
+            else if (_gameTable[2, 0] == 1 && _gameTable[2, 1] == 1 && _gameTable[2, 2] == 1)
+            {
+                _isOWinning = true;
+            }
+            else if (_gameTable[0, 0] == 1 && _gameTable[1, 0] == 1 && _gameTable[2, 0] == 1)
+            {
+                _isOWinning = true;
+            }
+            else if (_gameTable[0, 1] == 1 && _gameTable[1, 1] == 1 && _gameTable[2, 1] == 1)
+            {
+                _isOWinning = true;
+            }
+            else if (_gameTable[0, 2] == 1 && _gameTable[1, 2] == 1 && _gameTable[2, 2] == 1)
+            {
+                _isOWinning = true;
+            }
+            else if (_gameTable[0, 0] == 1 && _gameTable[1, 1] == 1 && _gameTable[2, 2] == 1)
+            {
+                _isOWinning = true;
+            }
+            else if (_gameTable[0, 2] == 1 && _gameTable[1, 1] == 1 && _gameTable[2, 0] == 1)
+            {
+                _isOWinning = true;
+            }
+
+
+            // X Winning Condition. 
+            if (_gameTable[0, 0] == -1 && _gameTable[0, 1] == -1 && _gameTable[0, 2] == -1)
+            {
+                _isXWinning = true;
+            }
+            else if (_gameTable[1, 0] == -1 && _gameTable[1, 1] == -1 && _gameTable[1, 2] == -1)
+            {
+                _isXWinning = true;
+            }
+            else if (_gameTable[2, 0] == -1 && _gameTable[2, 1] == -1 && _gameTable[2, 2] == -1)
+            {
+                _isXWinning = true;
+            }
+            else if (_gameTable[0, 0] == -1 && _gameTable[1, 0] == -1 && _gameTable[2, 0] == -1)
+            {
+                _isXWinning = true;
+            }
+            else if (_gameTable[0, 1] == -1 && _gameTable[1, 1] == -1 && _gameTable[2, 1] == -1)
+            {
+                _isXWinning = true;
+            }
+            else if (_gameTable[0, 2] == -1 && _gameTable[1, 2] == -1 && _gameTable[2, 2] == -1)
+            {
+                _isXWinning = true;
+            }
+            else if (_gameTable[0, 0] == -1 && _gameTable[1, 1] == -1 && _gameTable[2, 2] == -1)
+            {
+                _isXWinning = true;
+            }
+            else if (_gameTable[0, 2] == -1 && _gameTable[1, 1] == -1 && _gameTable[2, 0] == -1)
+            {
+                _isXWinning = true;
+            }
+
+
+
+
+
+
+
+
 
 
             base.Update(gameTime);
