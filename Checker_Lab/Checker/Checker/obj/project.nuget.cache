@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "cdl+wNP6/qkZDCRkmuCp+SZBWF2QyMpcc7NZM7XVPuhR1sNJJgqNZfC5r2hgJkPzX0yElp8CMBP6ma2aY9UT0w==",
+  "success": true,
+  "projectFilePath": "D:\\Dropbox\\Personal\\Teaching\\Computer Games Programming\\2-63\\Week 2\\Checker_Lab\\Checker\\Checker\\Checker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PS63\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\PS63\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+  ],
+  "logs": []
+}
