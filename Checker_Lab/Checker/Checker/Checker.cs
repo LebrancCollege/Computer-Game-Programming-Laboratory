@@ -56,6 +56,8 @@ namespace Checker
 
             _currentPlayerTurn = PlayerTurn.RedTurn;
 
+            _currentGameState = GameState.WaitingForSelection;
+
             _gameTable = new int[8, 8]
             {
                 { 1,0,1,0,1,0,1,0},
@@ -96,17 +98,37 @@ namespace Checker
 
             _previousMouseState = _mouseState;
 
-            _mouseState = Mouse.GetState();
 
             //TODO: Game logic in state machine
-
-            if(_mouseState.LeftButton == ButtonState.Pressed && _previousMouseState.LeftButton == ButtonState.Released)
+            switch(_currentGameState)
             {
-                int xPos = _mouseState.X / _TILESIZE;
-                int yPos = _mouseState.Y / _TILESIZE;
+                case GameState.WaitingForSelection:
+                    _mouseState = Mouse.GetState();
+                    if(_mouseState.LeftButton == ButtonState.Pressed && _previousMouseState.LeftButton == ButtonState.Released)
+                    {
+                        int xPos = _mouseState.X / _TILESIZE;
+                        int yPos = _mouseState.Y / _TILESIZE;
 
-                _selectedTile = new Point(xPos, yPos);
-            }
+                        _selectedTile = new Point(xPos, yPos);
+
+                        _currentGameState = GameState.ChipSelected; 
+                    }
+                    break;
+                case GameState.ChipSelected:
+                    _mouseState = Mouse.GetState();
+                    if (_mouseState.LeftButton == ButtonState.Pressed && _previousMouseState.LeftButton == ButtonState.Released)
+                    {
+                        int xPos = _mouseState.X / _TILESIZE;
+                        int yPos = _mouseState.Y / _TILESIZE;
+
+                        _gameTable[yPos, xPos] = _gameTable[_selectedTile.Y, _selectedTile.X];
+                        _gameTable[_selectedTile.Y, _selectedTile.X] = 0;
+
+                        _currentGameState = GameState.WaitingForSelection;
+                    }
+                    break;  
+            } 
+
 
             base.Update(gameTime);
         }
