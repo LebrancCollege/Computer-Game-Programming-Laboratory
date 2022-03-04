@@ -22,6 +22,8 @@ namespace Checker
 
         PlayerTurn _currentPlayerTurn;
 
+        Point _selectedTile;
+
         //TODO: Game State Machine
 
         MouseState _mouseState, _previousMouseState;
@@ -87,7 +89,17 @@ namespace Checker
 
             _previousMouseState = _mouseState;
 
+            _mouseState = Mouse.GetState();
+
             //TODO: Game logic in state machine
+
+            if(_mouseState.LeftButton == ButtonState.Pressed && _previousMouseState.LeftButton == ButtonState.Released)
+            {
+                int xPos = _mouseState.X / _TILESIZE;
+                int yPos = _mouseState.Y / _TILESIZE;
+
+                _selectedTile = new Point(xPos, yPos);
+            }
 
             base.Update(gameTime);
         }
@@ -111,8 +123,11 @@ namespace Checker
                 }
             }
 
+            //TODO: draw selected area.
+            _spriteBatch.Draw(_rect, new Vector2(_selectedTile.X * _TILESIZE, _selectedTile.Y * _TILESIZE), null, Color.Blue, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
+
             //TODO: draw chips
-            for(int i = 0; i < 8; i++)
+            for (int i = 0; i < 8; i++)
             {
                 for(int j = 0; j < 8; j++)
                 {
