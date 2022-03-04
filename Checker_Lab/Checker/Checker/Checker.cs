@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 
-namespace Checker
+namespace Checker  
 {
     public class Checker : Game
     {
@@ -25,6 +25,13 @@ namespace Checker
         Point _selectedTile;
 
         //TODO: Game State Machine
+        enum GameState
+        {
+              WaitingForSelection,
+              ChipSelected   
+        }
+
+        GameState _currentGameState;
 
         MouseState _mouseState, _previousMouseState;
         Point _clickedPos;
