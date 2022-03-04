@@ -69,6 +69,15 @@ namespace Checker
             // TODO: use this.Content to load your game content here
             _chip = this.Content.Load<Texture2D>("Chip");
             _horse = this.Content.Load<Texture2D>("Horse");
+            _rect = new Texture2D(_graphics.GraphicsDevice, _TILESIZE, _TILESIZE);
+
+            Color[] data = new Color[_TILESIZE * _TILESIZE];
+            for(int i = 0; i < data.Length; i++)
+            {
+                data[i] = Color.White;
+            }
+
+            _rect.SetData(data);
         }
 
         protected override void Update(GameTime gameTime)
@@ -91,6 +100,16 @@ namespace Checker
             _spriteBatch.Begin();
 
             //TODO: Draw board
+            for(int i = 0; i < 8; i++)
+            {
+                for(int j = 0; j < 8; j++)
+                {
+                    if((i + j) % 2 == 0)
+                    {
+                        _spriteBatch.Draw(_rect, new Vector2(_TILESIZE * j, _TILESIZE * i), null, Color.Black, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
+                    }
+                }
+            }
 
             //TODO: draw chips
             for(int i = 0; i < 8; i++)
