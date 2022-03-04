@@ -64,13 +64,12 @@ namespace TicTacToe
                         if(_isCircleTurn)
                         {
                             _gameTable[yPos, xPos] = 1;
-                            _isCircleTurn = !_isCircleTurn;
                         }
                         else
                         {
                             _gameTable[yPos, xPos] = -1;
-                            _isCircleTurn = !_isCircleTurn;
                         }
+                        _isCircleTurn = !_isCircleTurn;
                     }
                 }
             }
