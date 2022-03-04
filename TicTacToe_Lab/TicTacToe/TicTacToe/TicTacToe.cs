@@ -1,7 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System;
 
 namespace TicTacToe
 {
@@ -75,6 +74,15 @@ namespace TicTacToe
             }
 
             //TODO: check winning condition
+            // Winning when
+            // (0,0) - (0,1) - (0,2)
+            // (1,0) - (1,1) - (1,2)
+            // (2,0) - (2,1) - (2,2)
+            // (0,0) - (1,0) - (2,0)
+            // (0,1) - (1,1) - (2,1)
+            // (0,2) - (1,2) - (2,2)
+            // (0,0) - (1,1) - (2,2)
+            // (0,2) - (1,1) - (2,0) 
 
 
             base.Update(gameTime);
