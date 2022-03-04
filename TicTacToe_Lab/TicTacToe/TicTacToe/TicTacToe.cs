@@ -51,7 +51,13 @@ namespace TicTacToe
             if (state.LeftButton == ButtonState.Pressed)
             {
                 //TODO: do clicking
-                //if ()
+                int xPos = state.X / 200;
+                int yPos = state.Y / 200;
+
+                if (xPos >= 0 && xPos < 3 && yPos >= 0 && yPos < 3)
+                {
+                    _gameTable[yPos, xPos] = 1;
+                }
             }
 
             //TODO: check winning condition

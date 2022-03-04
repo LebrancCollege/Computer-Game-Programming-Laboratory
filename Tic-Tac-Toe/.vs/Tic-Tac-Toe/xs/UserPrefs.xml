@@ -1,16 +1,16 @@
 ﻿<Properties StartupConfiguration="{C7367CE5-7B16-4199-8436-07812AA0937F}|Default">
   <MonoDevelop.Ide.ItemProperties.Tic-Tac-Toe PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Tic-Tac-Toe/Tic-Tac-Toe.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tic-Tac-Toe/Tic_Tac_Toe.cs">
     <Files>
-      <File FileName="Tic-Tac-Toe/Program.cs" Line="10" Column="49" />
-      <File FileName="Tic-Tac-Toe/Tic-Tac-Toe.cs" Line="7" Column="29" />
+      <File FileName="Tic-Tac-Toe/Program.cs" Line="10" Column="43" />
+      <File FileName="Tic-Tac-Toe/Tic-Tac-Toe.cs" Line="40" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Tic-Tac-Toe" expanded="True">
             <Node name="Tic-Tac-Toe" expanded="True">
-              <Node name="Tic-Tac-Toe.cs" selected="True" />
+              <Node name="Tic_Tac_Toe.cs" selected="True" />
             </Node>
           </Node>
         </State>
