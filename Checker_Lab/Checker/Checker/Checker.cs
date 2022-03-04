@@ -12,6 +12,8 @@ namespace Checker
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        Texture2D _chip, _horse, _rect;
+
         enum PlayerTurn
         {
             RedTurn,
@@ -65,6 +67,8 @@ namespace Checker
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            _chip = this.Content.Load<Texture2D>("Chip");
+            _horse = this.Content.Load<Texture2D>("Horse");
         }
 
         protected override void Update(GameTime gameTime)
@@ -89,6 +93,26 @@ namespace Checker
             //TODO: Draw board
 
             //TODO: draw chips
+            for(int i = 0; i < 8; i++)
+            {
+                for(int j = 0; j < 8; j++)
+                {
+                    switch(_gameTable[i, j])
+                    {
+                        case 1:
+                            _spriteBatch.Draw(_chip, new Vector2(_TILESIZE * j, _TILESIZE * i), null, Color.Yellow, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
+                            break;
+                        case -1:
+                            break;
+                        case 2:
+                            break;
+                        case -2:
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
 
 
             _spriteBatch.End();

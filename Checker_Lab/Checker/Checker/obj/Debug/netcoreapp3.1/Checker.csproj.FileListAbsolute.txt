@@ -1,23 +1,49 @@
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\Checker.exe
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\Checker.deps.json
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\Checker.runtimeconfig.json
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\Checker.runtimeconfig.dev.json
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\Checker.dll
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\Checker.pdb
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\MonoGame.Framework.dll
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libSDL2-2.0.so.0
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libopenal.so.1
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSDL2-2.0.0.dylib
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\runtimes\osx\native\libopenal.1.dylib
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SDL2.dll
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\soft_oal.dll
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SDL2.dll
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\soft_oal.dll
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\obj\Debug\netcoreapp3.1\Checker.csprojAssemblyReference.cache
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\obj\Debug\netcoreapp3.1\Checker.AssemblyInfoInputs.cache
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\obj\Debug\netcoreapp3.1\Checker.AssemblyInfo.cs
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\obj\Debug\netcoreapp3.1\Checker.csproj.CoreCompileInputs.cache
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\obj\Debug\netcoreapp3.1\Checker.csproj.CopyComplete
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\obj\Debug\netcoreapp3.1\Checker.dll
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\obj\Debug\netcoreapp3.1\Checker.pdb
-D:\Development\Monogame\Computer Game Programming\OpenGL Version\Week 2\Checker_Lab\Checker\Checker\obj\Debug\netcoreapp3.1\Checker.genruntimeconfig.cache
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Checker.exe
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Checker.deps.json
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Checker.runtimeconfig.json
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Checker.runtimeconfig.dev.json
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Checker.dll
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Checker.pdb
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/MonoGame.Framework.dll
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libSDL2-2.0.so.0
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libopenal.so.1
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/osx/native/libSDL2-2.0.0.dylib
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/osx/native/libopenal.1.dylib
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/SDL2.dll
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/soft_oal.dll
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/SDL2.dll
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/soft_oal.dll
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.csprojAssemblyReference.cache
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.AssemblyInfoInputs.cache
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.AssemblyInfo.cs
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.csproj.CoreCompileInputs.cache
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.csproj.CopyComplete
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.dll
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.pdb
+D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 2/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.genruntimeconfig.cache
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Content/Chip.xnb
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Content/GameText.xnb
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Content/Horse.xnb
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Checker.deps.json
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Checker.runtimeconfig.json
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Checker.runtimeconfig.dev.json
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Checker.dll
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/Checker.pdb
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/MonoGame.Framework.dll
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libSDL2-2.0.so.0
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libopenal.so.1
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/osx/native/libSDL2-2.0.0.dylib
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/osx/native/libopenal.1.dylib
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/SDL2.dll
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/soft_oal.dll
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/SDL2.dll
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/soft_oal.dll
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.csproj.AssemblyReference.cache
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.GeneratedMSBuildEditorConfig.editorconfig
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.AssemblyInfoInputs.cache
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.AssemblyInfo.cs
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.csproj.CoreCompileInputs.cache
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.csproj.CopyComplete
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.dll
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.pdb
+/Users/poomyimyuean/Desktop/Poomkun/Hub/Code/ProjectCS/comgame/Lab/Checker_Lab/Checker/Checker/obj/Debug/netcoreapp3.1/Checker.genruntimeconfig.cache
