@@ -156,14 +156,14 @@ namespace TicTacToe
                 _isXWinning = true;
             }
 
-
-
-
-
-
-
-
-
+            if(_isOWinning)
+            {
+                Console.WriteLine("O is the winner.");
+            }
+            else if(_isXWinning)
+            {
+                Console.WriteLine("X is the winner.");
+            }
 
             base.Update(gameTime);
         }
