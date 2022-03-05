@@ -27,8 +27,11 @@ namespace Checker
         //TODO: Game State Machine
         enum GameState
         {
+              TurnBeginning,
               WaitingForSelection,
-              ChipSelected   
+              ChipSelected,
+              TurnEnded,
+              GameEnded 
         }
 
         GameState _currentGameState;
@@ -60,7 +63,7 @@ namespace Checker
 
             _gameTable = new int[8, 8]
             {
-                { 1,0,1,0,1,0,1,0},
+                {   1,0,1,0,1,0,1,0},
                 { 0,1,0,1,0,1,0,1},
                 { 0,0,0,0,0,0,0,0},
                 { 0,0,0,0,0,0,0,0},
@@ -102,6 +105,34 @@ namespace Checker
             //TODO: Game logic in state machine
             switch(_currentGameState)
             {
+                case GameState.TurnBeginning:
+                    // Searching for available moves.
+                    // Finding the beatable moves.
+                    // Finding the possible moves.
+                    for(int i = 0; i < 8; i++)
+                    {
+                        for(int j = 0; j < 8; j++)
+                        {
+                            if(_currentPlayerTurn == PlayerTurn.RedTurn)
+                            {
+                                // Red Turn
+                                if(_gameTable[j, i] < 0)
+                                {
+                                      // Finding the possible moves based on the current position. 
+                                }
+
+                            }
+                            else
+                            {
+                                // Yellow Turn
+                                if(_gameTable[j, i] > 0)
+                                {
+                                    // Finding the possible moves based on the current position. 
+                                }
+                            }
+                        }
+                    }
+                    break;
                 case GameState.WaitingForSelection:
                     _mouseState = Mouse.GetState();
                     if(_mouseState.LeftButton == ButtonState.Pressed && _previousMouseState.LeftButton == ButtonState.Released)
@@ -109,10 +140,12 @@ namespace Checker
                         int xPos = _mouseState.X / _TILESIZE;
                         int yPos = _mouseState.Y / _TILESIZE;
 
-                        _selectedTile = new Point(xPos, yPos);
-
-                        _currentGameState = GameState.ChipSelected; 
-                    }
+                        if((_currentPlayerTurn == PlayerTurn.RedTurn && _gameTable[yPos, xPos] < 0) || (_currentPlayerTurn == PlayerTurn.YellowTurn && _gameTable[yPos, xPos] > 0))
+                        {
+                            _selectedTile = new Point(xPos, yPos);
+                            _currentGameState = GameState.ChipSelected;
+                        }
+                    } 
                     break;
                 case GameState.ChipSelected:
                     _mouseState = Mouse.GetState();
@@ -121,8 +154,12 @@ namespace Checker
                         int xPos = _mouseState.X / _TILESIZE;
                         int yPos = _mouseState.Y / _TILESIZE;
 
+
                         _gameTable[yPos, xPos] = _gameTable[_selectedTile.Y, _selectedTile.X];
                         _gameTable[_selectedTile.Y, _selectedTile.X] = 0;
+
+                        if (_currentPlayerTurn == PlayerTurn.RedTurn) _currentPlayerTurn = PlayerTurn.YellowTurn;
+                        else _currentPlayerTurn = PlayerTurn.RedTurn;
 
                         _currentGameState = GameState.WaitingForSelection;
                     }
@@ -186,6 +223,58 @@ namespace Checker
             _graphics.BeginDraw();
 
             base.Draw(gameTime);
+        }
+
+        protected List<Point> FindPossibleMoves(Point currentTile)
+        {
+            List<Point> returnPoints = new List<Point>();
+
+            if(_gameTable[currentTile.Y, currentTile.X] == -1)
+            {
+                // Red Normal Chip.
+
+                // Checking up left.
+                if(currentTile.X - 1 >= 0 && currentTile.Y - 1 >= 0)
+                {
+                    if(_gameTable[currentTile.Y - 1, currentTile.X - 1] == 0)
+                    {
+                        returnPoints.Add(new Point(currentTile.X - 1, currentTile.Y - 1)); 
+                    }
+                }
+
+                // Checking up right.
+                if(currentTile.X + 1 >= 0 && currentTile.Y - 1 >= 0)
+                {
+                    if(_gameTable[currentTile.Y - 1, currentTile.X + 1] == 0)
+                    {
+                        returnPoints.Add(new Point(currentTile.X - 1, currentTile.Y - 1));
+                    }
+                }
+            }
+            else
+            {
+                // Yellow Normal Chip.
+
+                // Checking up left.
+                if (currentTile.X - 1 >= 0 && currentTile.Y + 1 < 8)
+                {
+                    if (_gameTable[currentTile.Y + 1, currentTile.X - 1] == 0)
+                    {
+                        returnPoints.Add(new Point(currentTile.X - 1, currentTile.Y + 1));
+                    }
+                }
+
+                // Checking up right.
+                if (currentTile.X + 1 < 8 && currentTile.Y + 1 < 8)
+                {
+                    if (_gameTable[currentTile.Y + 1, currentTile.X + 1] == 0)
+                    {
+                        returnPoints.Add(new Point(currentTile.X + 1, currentTile.Y + 1));
+                    }
+                }
+            }
+
+            return returnPoints;
         }
     }
 }
