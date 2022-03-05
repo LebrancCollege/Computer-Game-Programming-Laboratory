@@ -22,7 +22,9 @@ namespace Checker
 
         PlayerTurn _currentPlayerTurn;
 
-        Point _selectedTile;
+        Point _selectedTile;  
+
+        List<Point> _possibleClicked;
 
         //TODO: Game State Machine
         enum GameState
@@ -59,7 +61,7 @@ namespace Checker
 
             _currentPlayerTurn = PlayerTurn.RedTurn;
 
-            _currentGameState = GameState.WaitingForSelection;
+            _currentGameState = GameState.TurnBeginning; 
 
             _gameTable = new int[8, 8]
             {
@@ -72,6 +74,8 @@ namespace Checker
                 { -1,0,-1,0,-1,0,-1,0},
                 { 0,-1,0,-1,0,-1,0,-1}
             };
+
+            _possibleClicked = new List<Point>();
 
             base.Initialize();
         }
@@ -107,6 +111,7 @@ namespace Checker
             {
                 case GameState.TurnBeginning:
                     // Searching for available moves.
+                    _possibleClicked.Clear();  
                     // Finding the beatable moves.
                     // Finding the possible moves.
                     for(int i = 0; i < 8; i++)
@@ -118,7 +123,11 @@ namespace Checker
                                 // Red Turn
                                 if(_gameTable[j, i] < 0)
                                 {
-                                      // Finding the possible moves based on the current position. 
+                                    // Finding the possible moves based on the current position.
+                                    if(FindPossibleMoves(new Point(i, j)).Count > 0)
+                                    {
+                                        _possibleClicked.Add(new Point(i, j)); 
+                                    }
                                 }
 
                             }
