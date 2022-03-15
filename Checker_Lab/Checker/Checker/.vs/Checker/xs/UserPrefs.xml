@@ -1,5 +1,5 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{D25647B4-AF10-4B97-84D4-950CFCFD1E23}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Checker.cs">
     <Files>
       <File FileName="Program.cs" Line="1" Column="1" />
       <File FileName="Checker.cs" Line="1" Column="1" />

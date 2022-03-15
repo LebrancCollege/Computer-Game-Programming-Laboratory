@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 3/Snake/Snake/Content/GameFont.spritefont","D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 3/Snake/Snake/Content/bin/DesktopGL/GameFont.xnb","FontDescriptionProcessor","SpriteFontContent",2008,21538,0.3116194
+"D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 3/Snake/Snake/Content/Pellet.png","D:/Development/Monogame/Computer Game Programming/OpenGL Version/Week 3/Snake/Snake/Content/bin/DesktopGL/Pellet.xnb","TextureProcessor","Texture2DContent",1021,485,0.2311902
