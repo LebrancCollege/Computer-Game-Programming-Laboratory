@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{70752BA1-380A-494C-9606-FFE5E0B68C37}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="The-Snake-Lab/Program.cs" Line="10" Column="46" />
+      <File FileName="The-Snake-Lab/Game1.cs" Line="23" Column="31" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="The-Snake-Lab" expanded="True">
+            <Node name="The-Snake-Lab" expanded="True">
+              <Node name="Content" expanded="True">
+                <Node name="bin" expanded="True" />
+                <Node name="Font" expanded="True" />
+              </Node>
+              <Node name="TheSnake.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.The-Snake-Lab PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
